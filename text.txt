@@ -1,0 +1,57 @@
+Part One: Solidify Terminology
+In your own terms, define the following terms:
+
+1. What is HTTP?
+    Hyper text transfer protocol is a standaradized, structured method for browsers and servers to communicate/ transfer information
+
+2. What is a URL?
+    The human readable location of a webpage or information available on the world wide web specifying the protocol for information transfer, the hostname or specified server hoasting the information and the port used to access that server, the resource that is the human readable portion and a query, if any, asking for extra information besides static content.
+
+3. What is DNS?
+    Domain naming system is a standardized method of translating hostnames to their designated IP addresses (the place/server that information lives) so a browsers knows where to ask for the information its looking for. 
+
+4. What is a query string?
+    Query string is extra dynamic information being requested by the browser/ client like search functions, form requests or submissions... I think it's mostly the stuff that a browser can dyanimcally interact with on a web page. 
+
+
+5. What are two HTTP verbs and how are they different?
+    GET- just a request for information, does not change anything on the server side. 
+
+    POST- sending data to that changes what's on the server like a comment, post to social media, adding information to a user account on a website. This is sent through the body of the request
+
+6. What is an HTTP request?
+
+    A browser or client asking a server for a webpage like "hey get me this web page, here's how the data should be formatted and displayed, here's what I can and can't do, here's what (if anything) I have from you before and here's some info about where and when I'm sending this request."
+
+
+    A request usually made via a url (resource) by a browser (or client) to a server for information, like a web page, using HTTP protocol. In addition to the website being requested, it specifies the method of the request, the HTTP version, and some meta data in the request header to help the server know how/ how to send like display language, content language, date, any cookies stored previously from that server.
+
+7. What is an HTTP response?
+    "Here's the status of the resource you asked, here's what (if anything) I've sent you before from that resource and here's what I haven't, and it's formatted in a way you and your human can understand and display, and here's some other info about me and the resource you requested."
+    
+    The information requested by the browser constructed based on the specifications in the request header in a way the requesting browser can understand. Hopefully usually the website being requested in a format readable and display-able by the requesting browser. 
+
+8. What is an HTTP header? Give a couple examples of request and response headers you have seen.
+    The usually invisible meta data transfered between server and browser to establish how the resource should be formatted and some information about the request and response other than the resource itself.
+
+    I don't know whats meant by examples... like the wikipedia page? Like the response status code?  
+
+
+9. What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+
+    1. Browser checks device cache to see if somesite.com is cached locally already, if not it askes the DNS for the hostname somesite.com's server IP address and gets sent there
+
+    2. Connects to somesite.com's server 
+
+    3. Via HTTP protocol through specified or default port, asks for some/page.html 
+        a. Tells the server some info about the request and how the response should be formatted
+
+        b. Somesite.com's server looks for some/page.html and its status and returns the requested information to the browswer, formatted based on the info the browser sent via HTTP
+        
+        c. OR it has an issue and tells the browser what the issue is
+
+    6. The browser reads and displays the requested information on the requesting device
+
+
+
+
